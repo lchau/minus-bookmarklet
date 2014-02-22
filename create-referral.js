@@ -27,9 +27,9 @@ var characters = function () {
             if (min > max) {
                 throw new RangeError("min value '" + min + "' must be lesser than or equal to max value '" + max + "'");
             } else if (min < min_value) {
-                throw new RangeError(min + " exceeds minimum value (" + min_value);
+                throw new RangeError(min + " exceeds minimum value (" + min_value + ")");
             } else if (max > max_value) {
-                throw new RangeError(max + " exceeds maximum value (" + max_value);
+                throw new RangeError(max + " exceeds maximum value (" + max_value + ")");
             } else if (min == max) {
                 return max;
             }
